@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFE9F3;
+    color: #B27092;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: #512D38;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    color: #B27092;
+}
+section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+h2{
+    color: #87BAAB;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+p{
+    font-weight: bold;
+    margin-top: 30px;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.img-nav{
+    width: 88px;
+    height: auto;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.contenedor-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    align-items:center;
+    font-size: x-large;
+}
+.contenedor-menu ul{
+    width: 100%;
+    height: 100px;
+}
+.contenedor-menu li{
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style-type: none;
+    width: 25%;
+    text-align: center;
+    padding: 20%;
+}
+.contenedor-menu li a{
+    text-decoration: none;
+}
+.contenedor-menu li a:link, .contenedor-menu li a:visited{
+    color:#FFE9F3;
+    font-weight: bolder;
+}
+.contenedor-menu li a:hover{
+    color: #87BAAB;
+}
+.contenedor-video{
+    width: 100%;
+    height: auto;
+}
+.contenedor-video video{
+    width: 100%;
+    height: auto;
+}
+.contenedor-servicios{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+.contenedor-servicios div{
+    width: 30%;
+    height: 350px;
+    background-color: #a4e0ce;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 53px;
+    color: #512D38;
+}
+.contenedor-servicios img{
+    width: 85%;
+    height: auto;
+    border-radius: 66px;
+}
+.contenedor-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #512D38;
+}
+.contenedor-footer section{
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #fed9b7;
+}
+.contenedor-footer img{
+    width: 180%;
+    height: auto;
+    margin-top: 20px;
+    
+}
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+div.gallery-item {
+  margin: 32px;
+  width: 305px;
+}
+div.gallery-item:hover {
+  border: 1px solid #777;
+    border-radius: 20px;
+}
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+    border-radius: 20px;
+}
+div.gallery-item div.desc {
+    width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+.sabores {
+    padding: 60px 40px;
+    text-align: center;
+}
+.sabores h2 {
+    font-size: 60px;
+}
+.subtitulo {
+    margin-bottom: 30px;
+    font-size: x-large;
+}
+.contenedor-sabores {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.sabor-card {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 220px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+.sabor-card:hover {
+    transform: translateY(-5px);
+}
+.sabor-card img {
+    width: 100%;
+    border-radius: 15px;
+}
+.sabor-card h3 {
+    margin: 10px 0 5px;
+    color: #B27092;
+}
+.sabor-card p{
+    text-align:center;
+    display: contents;
+    color:#B27092;
+}
+.promociones {
+    padding: 60px 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #512D38, #B27092);
+    color: white;
+}
+.promociones h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #FFE9F3;
+}
+.promociones .subtitulo {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+.contenedor-promos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.promo-card {
+    background-color: #FFFFFF;
+    color: #555;
+    border-radius: 20px;
+    padding: 25px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.promo-card:hover {
+    transform: translateY(-8px);
+}
+.promo-card h3 {
+    color: #87BAAB;
+    margin-bottom: 10px;
+}
+.promo-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: contents;
+}
+.promo-card .precio {
+    display: block;
+    font-weight: bold;
+    color: #8B5E3C;
+    margin-top: 20px;
+    margin-bottom:5px;
+}
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 637px;
+    margin: 32px auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.slides {
+    display: flex;
+}
+.slide {
+    width: 100%;
+    display: none;
+    border-radius: 20px;
+}
+.slide.activo {
+    display: block;
+}
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #87BAAB;
+    border: none;
+    color: white;
+    font-size: 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.izquierda {
+    left: 10px;
+}
+.derecha {
+    right: 10px;
+}
+.flecha:hover {
+    background-color: #512D38;
+}
+.contacto {
+    padding: 60px 40px;
+    text-align: center;
+}
+.contenedor-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.formulario {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.formulario input,
+.formulario textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.formulario button {
+    background-color: #87BAAB;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #FFE9F3;
+}
+.info-contacto {
+    text-align:left;
+    max-width: 300px;
+}
+.info-contacto h3 {
+    color: #512D38;
+}
+@media screen and (max-device-width:360px){
+    body{
+        width: 100%;
+        background-color: #FFF5E4;
+        color: #FF6B81;
+    }
+    section{
+        width: 100%;
+    }
+    .contenedor-servicios{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .contenedor-servicios div{
+        width: 90%;
+        height: auto;
+        background-color: #87BAAB;
+        padding: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 20px;
+        color: #512D38;
+        margin-top: 10px;
+    }
+    .contenedor-servicios img{
+        width: 70%;
+        height: auto;
+        border-radius: 50px;
+    }
+    .contenedor-footer{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+    }
+    .contenedor-footer section{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .contenedor-footer img{
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .contenedor-menu{
+        flex-direction: column;
+        align-items:center;
+    }
+    .contenedor-menu ul{
+        height: auto;
+    }
+    nav{
+        height: auto;
+        width: 100%;
+    }
+    .contenedor-menu li{
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
+    }
+    h2{
+        color: #512D38;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    p{
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 15px;
+        height: 90%;
+    }
+    .img-nav{
+        width: 80px;
+        height: auto;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .contenedor-menu li a{
+        text-decoration: none;
+    }
+    .contenedor-menu li a:link, .contenedor-menu li a:visited{
+        color:#FFE9F3;
+        font-weight: bolder;
+    }
+    .contenedor-menu li a:hover{
+        color: #87BAAB;
+    }
+    .contenedor-video{
+        width: 100%;
+        height: auto;
+    }
+    .contenedor-video video{
+        width: 100%;
+        height: auto;
+    }
+    .contenedor-servicios img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    div.gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:center;
+    }
+    div.gallery-item {
+      margin: 10px;
+      width: 90%;
+    }
+    div.gallery-item:hover {
+      border: 1px solid #777;
+        border-radius: 20px;
+    }
+    div.gallery-item img {
+      width: 100%;
+      height: auto;
+        border-radius: 20px;
+    }
+    div.gallery-item div.desc {
+        width: 100%;
+      padding: 15px;
+      text-align: center;
+    }
+    .sabores {
+        padding: 30px 15px;
+        text-align: center;
+    }
+    .sabores h2 {
+        font-size: 28px;
+    }
+    .subtitulo {
+        margin-bottom: 30px;
+        font-size: x-large;
+    }
+    .contenedor-sabores {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sabor-card {
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        width: 90%;
+        padding: 15px;
+        transition: transform 0.2s;
+    }
+    .sabor-card:hover {
+        transform: translateY(-5px);
+    }
+    .sabor-card img {
+        width: 100%;
+        border-radius: 15px;
+    }
+    .sabor-card h3 {
+        margin: 10px 0 5px;
+        color: #B27092;
+    }
+    .sabor-card p{
+        text-align:center;
+        display: contents;
+        color:#B27092;
+    }
+    .promociones {
+        padding: 30px 15px;
+        text-align: center;
+        background: linear-gradient(135deg, #512D38, #B27092);
+        color: white;
+    }
+    .promociones h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+        color: #FFE9F3;
+    }
+    .promociones .subtitulo {
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+    .contenedor-promos {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .promo-card {
+        background-color: #FFFFFF;
+        color: #555;
+        border-radius: 20px;
+        padding: 25px;
+        width: 90%;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .promo-card:hover {
+        transform: translateY(-8px);
+    }
+    .promo-card h3 {
+        color: #87BAAB;
+        margin-bottom: 10px;
+    }
+    .promo-card p {
+        font-size: 20px;
+        margin-bottom: 15px;
+        display: contents;
+    }
+    .promo-card .precio {
+        display: block;
+        font-weight: bold;
+        color: #8B5E3C;
+        margin-top: 20px;
+        margin-bottom:5px;
+    }
+    .carrusel {
+        position: relative;
+        width: 100%;
+        max-width:100%;
+        margin: 15px auto;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .slides {
+        display: flex;
+    }
+    .slide {
+        width: 100%;
+        display: none;
+        border-radius: 20px;
+    }
+    .slide.activo {
+        display: block;
+    }
+    .flecha {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #87BAAB;
+        border: none;
+        color: white;
+        font-size: 18px;
+        padding: 8px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .izquierda {
+        left: 10px;
+    }
+    .derecha {
+        right: 10px;
+    }
+    .flecha:hover {
+        background-color: #512D38;
+    }
+    .contacto {
+        padding: 30px 15px;
+        text-align: center;
+    }
+    .contenedor-contacto {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .formulario {
+        background-color: white;
+        padding: 25px;
+        border-radius: 20px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .formulario input,
+    .formulario textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+    }
+    .formulario button {
+        background-color: #87BAAB;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #FFE9F3;
+    }
+    .info-contacto {
+        text-align:center;
+        max-width: 90%;
+    }
+    .info-contacto h3 {
+        color: #512D38;   
+    }
+}

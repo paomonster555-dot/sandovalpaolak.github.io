@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <link rel="stylesheet" href="styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html"> <img class="img-nav" src="imagenes/logo%20sc.png" alt=""></a>
+            <ul class="contenedor-menu">
+                <li><a href="sabores.html">Sabores</a></li>
+                <li><a href="promos.html">Promos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Nuestros productos</h2>
+        </section>
+        <section>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="imagenes/Santa%20Clara%203.jpg" alt="Cinque Terre" width="600" height="400">
+                <div class="desc">Sabores irresistible</div>
+            </div>
+                <div class="gallery-item">
+                    <img src="imagenes/SANTA%20CLARA%201.jpeg" alt="Forest" width="600" height="400">
+                <div class="desc">Más cremosos</div>
+            </div>
+                <div class="gallery-item">
+                    <img src="imagenes/santa%20clara%202.webp" alt="Northern Lights" width="600" height="400">
+                <div class="desc">Nuevos sabores</div>
+            </div>
+                <div class="gallery-item">
+                    <img src="imagenes/santa%20clara%204.jpg" alt="Mountains" width="600" height="400">
+                <div class="desc">Distintas presentaciones</div>
+            </div>
+        </section>
+        <section class="promociones">
+            <h2>Promociones Especiales</h2>
+            <p class="subtitulo">Aprovecha nuestras ofertas dulces</p>
+        <div class="contenedor-promos">
+        <div class="promo-card">
+            <h3>2x1 en Helados</h3>
+            <p>Compra un helado y llévate otro gratis</p>
+            <span class="precio">Martes y Jueves</span>
+        </div>
+        <div class="promo-card">
+            <h3>Combo Familiar</h3>
+            <p>4 helados + toppings gratis</p>
+            <span class="precio">$120</span>
+        </div>
+        <div class="promo-card">
+            <h3>Happy Hour</h3>
+            <p>20% de descuento de 5 a 7 pm</p>
+            <span class="precio">Todos los días</span>
+        </div>
+        </div>
+        </section>
+        <section>
+            <div class="carrusel">
+                <button class="flecha izquierda" onclick="cambiarSlide(-1)">❮</button>
+                <div class="slides">
+                    <img src="imagenes/promo%200.jpg" class="slide activo">
+                    <img src="imagenes/promo%201.jpg" class="slide">
+                    <img src="imagenes/promo%202.webp" class="slide">
+                </div>
+                <button class="flecha derecha" onclick="cambiarSlide(1)">❯</button>
+            </div>
+                <script src="script.js"></script>
+        </section>
+        <footer class="contenedor-footer">
+            <section>
+               <a href="https://www.facebook.com/profile.php?id=100071101695477"><img src="imagenes/facebook.png" alt=""></a>
+            </section>
+            <section>
+                <a href="https://www.instagram.com/santaclaramx/?hl=es"><img src="imagenes/social.png" alt=""></a>
+            </section>
+            <section>
+                <img src="imagenes/social%20(1).png" alt="">
+            </section>
+        </footer>
+    </body>
+</html>
